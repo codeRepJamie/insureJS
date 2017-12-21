@@ -8,7 +8,7 @@ insure.js分析
 ### 日期选择控件封装 （new_toubao_selector.js） ###
 
 ## Function INSURE.init ## 
-### 主程序 （67-146） ###
+### 主程序 （69-150） ###
 
 -	[cp1]（71）根据不同环境，调用不同的接口地址
 
