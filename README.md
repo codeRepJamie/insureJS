@@ -10,13 +10,13 @@ I get 10 times more traffic from [Google] [1] than from
   [2]: http://search.yahoo.com/  "Yahoo Search"
   [3]: http://search.msn.com/    "MSN Search"
 
-Function（67-146）init 第一步进入 {
+**Function INSURE.init** （67-146） 第一步进入 {
 
 	[cp1]（71）根据不同环境，调用不同的接口地址
 
 	[fn1]（87）初始化页面dom骨架
 
-	[fn1] INSURE.dataSetting（90）初始化页面数据,并在数据设置完毕后回填上次用户输入的数据
+	[fn1] **INSURE.dataSetting**（90）初始化页面数据,并在数据设置完毕后回填上次用户输入的数据
 
 	[cp4]（100）批量插入需要初始化的方法
 
@@ -34,7 +34,7 @@ Function（67-146）init 第一步进入 {
 
 }
 
-Function（488-935） INSURE.dataSetting 初始化页面数据
+**Function INSURE.dataSetting** （488-935） 初始化页面数据
 {
 	params:
         sec_time_ajax 是否首次请求(不是第一次请求)
