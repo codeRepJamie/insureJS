@@ -2,15 +2,10 @@
 [js 地址](https://assets.xrkcdn.com/frontend-m/xrk-mall-frontend/xrk-mall-concat/static/cdn/js/insure_f5c1e32.js)
 
 insure.js分析
-
-I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or [MSN] [3].
-
-  [1]: http://google.com/        "Google"
-  [2]: http://search.yahoo.com/  "Yahoo Search"
-  [3]: http://search.msn.com/    "MSN Search"
+===============================================================================================
 
 **Function INSURE.init** （67-146） 第一步进入 {
+-----------------------------------------------------------------------------------------------
 
 	[cp1]（71）根据不同环境，调用不同的接口地址
 
@@ -34,8 +29,8 @@ I get 10 times more traffic from [Google] [1] than from
 
 }
 
-**Function INSURE.dataSetting** （488-935） 初始化页面数据
-{
+**Function INSURE.dataSetting** （488-935） 初始化页面数据{
+-----------------------------------------------------------------------------------------------
 	params:
         sec_time_ajax 是否首次请求(不是第一次请求)
         callback 回调函数
