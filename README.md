@@ -91,7 +91,7 @@ insure.js分析
                 * 如果已经初始化过，就直接用上次选择的选项
                 
         *   [clip]设置价格
-            *   **[fn] INSURE.change_option ** 数据驱动
+            *   ** [fn] INSURE.change_option ** 数据驱动
             *   _callback()回调
             
             *   [if] 普通h5页面
@@ -102,14 +102,14 @@ insure.js分析
         
         *   调用  [fn] EXTRA.after_data_setting(服务器返回的数据)
         
-        *   ** [local fn2] settingDate **
+        *   ** [local fn2]settingDate **
             >   设置终保时间 
             *    [if]判断INSURE.vars.period没有A设置多少岁到期
             *    [else] 到期设置时间到最后一天
             
             *   [fn] EXTRA.policy_end_date() 根据不同保险公司做不同的hackCode
 
-        *   ** [local fn1] set_option **  
+        *   ** [local fn1]set_option **  
             >   根据数据源查找en_name定位select DOM,然后插入option
             *   params:
                 *   params reset_data.prem_calc_attr单个元素
@@ -133,6 +133,6 @@ insure.js分析
 
 ## Function EXTRA.after_data_setting ## 
 ### data_setting之后补充步骤 （3428-3509） ###
->   主要是根据不同的产品做一些投保信息选项规则不同的修改
->   选择本人与非本人关系时候 投保年龄范围 变化 ，重复？
->   如果支持银联操作添加银行
+>   *   主要是根据不同的产品做一些投保信息选项规则不同的修改
+>    *   选择本人与非本人关系时候 投保年龄范围 变化 ，重复？
+>    *   如果支持银联操作添加银行
