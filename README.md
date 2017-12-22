@@ -230,7 +230,7 @@ insure.js分析
 >   1.   根据 page_option.sellerNo 和 page_option.productNo 修改一些投保ui显示
 
 ## Function EXTRA.before_data_setting ## 
-> data_setting之前补充步骤 （3428-3509）
+> data_setting之前补充步骤 （3410-3427）
 > CALL IN TEXT :1
 
 > 这里主要是干啥的？
@@ -265,7 +265,7 @@ insure.js分析
 
 
 ## Function BENIFIT.benifit_render ## 
-> 根据 （3854-3870）
+> 根据data单项 调用[COMPONENT.apply]创建DOM字符串 （3854-3870）
 > CALL IN TEXT :1
 
 > 这里主要是干啥的？
@@ -334,18 +334,19 @@ insure.js分析
 end
 ---------------------------------------------------------------------
 [INSURE.renderDomContent]: #function-insurerenderdomcontent     "初始化页面dom骨架"
+[INSURE.init_back_data]: #function-insureinit_back_data    "数据回填"
 [INSURE.dataSetting]: #function-insuredatasetting     "初始化页面数"
-[INSURE.init_back_data]: #function-initbackdata     "数据回填"
-[INSURE.change_option]: #function-insurechangeoption     "根据数据隐藏、显示项目"
-[INSURE.percentTurnPoint]: #function-percentturnpoint   "百分比转换为小数点[filter]"
+[INSURE.change_option]: #function-insurechange_option     "根据数据隐藏、显示项目"
+[INSURE.percentTurnPoint]: #function-insurepercentturnpoint   "百分比转换为小数点[filter]"
 
 [EXTRA.init]: #function-extrainit "INSURE.dataSetting之前要做的事情"
 [EXTRA.before_data_setting]: #function-extrabeforedatasetting "INSURE.dataSetting之前要做的事情"
-[EXTRA.after_data_setting]: #function-extraafterdatasetting "INSURE.dataSetting之后要做的事情"
-[EXTRA.after_render]: #function-extraafterrender " 根据url pay_term 做一些显示隐藏设置"
+[EXTRA.after_data_setting]: #function-extrabefore_data_setting "INSURE.dataSetting之后要做的事情"
+[EXTRA.after_render]: #function-extraafter_data_setting " 根据url pay_term 做一些显示隐藏设置"
 
-[BENIFIT.benifit_lot_change]: #function-benifitbenifitlotchange "lot根据选择自动变化最大只能100%"
-[BENIFIT.benifit_backData]: #function-benifitbenifitbackdata "INSURE.dataSetting之前要做的事情"
+[BENIFIT.benifit_lot_change]: #function-benifitbenifit_lot_change "lot根据选择自动变化最大只能100%"
+[BENIFIT.benifit_render]: #function-benifitbenifit_render "lot根据选择自动变化最大只能100%"
+[BENIFIT.benifit_backData]: #function-benifitbenifit_backdata "INSURE.dataSetting之前要做的事情"
 [BENIFIT.benifit_sort]: #function-benifitbenifit_sort "重新排序受益人的标题 obj_type 以及序号 benifits-key"
 
-[RENEWAL.renewal_relation_hover]: #function-renewalrenewalrelationhover "续保订单时候 保证被保人证件类型与证件号不允许修改且与进来的时候 一致"
+[RENEWAL.renewal_relation_hover]: #function-renewalrenewal_relation_hover "续保订单时候 保证被保人证件类型与证件号不允许修改且与进来的时候 一致"
