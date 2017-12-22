@@ -17,7 +17,7 @@ insure.js分析
 
 -	[fn1]（87）初始化页面dom骨架
 
--	[fn1] **INSURE.dataSetting**[1]（90）初始化页面数据,并在数据设置完毕后回填上次用户输入的数据
+-	[INSURE.dataSetting][fn2]（90）初始化页面数据,并在数据设置完毕后回填上次用户输入的数据
 
 -	[cp4]（100）批量插入需要初始化的方法
 
@@ -142,4 +142,4 @@ insure.js分析
 >    *   如果支持银联操作添加银行
 
 
-[1]: #function-insuredatasetting     "[fetch fn]服务器数据"
+[fn2]: #function-insuredatasetting     "[fn] INSURE.dataSetting 初始化页面数"
