@@ -7,6 +7,9 @@ insure.js分析
 ## Object  window.dateSelect ##
 ### 日期选择控件封装 （new_toubao_selector.js） ###
 
+## Object INSURE.vars ##
+###  全局变量 （4-66） ###
+
 ## Function INSURE.init ## 
 ### 主程序 （69-150） ###
 
@@ -14,7 +17,7 @@ insure.js分析
 
 -	[fn1]（87）初始化页面dom骨架
 
--	[fn1] **INSURE.dataSetting**（90）初始化页面数据,并在数据设置完毕后回填上次用户输入的数据
+-	[fn1] **INSURE.dataSetting**[1]（90）初始化页面数据,并在数据设置完毕后回填上次用户输入的数据
 
 -	[cp4]（100）批量插入需要初始化的方法
 
@@ -33,14 +36,15 @@ insure.js分析
 
 ## Function INSURE.dataSetting ##
 ### 初始化页面数 （488-494） ###
->这里主要是处理
+>这里主要是干啥的？
+>    1.  页面数据持久化，如果有旧有数据，取出来
 
 *   params:
     *   sec_time_ajax 是否首次请求(不是第一次请求)
     *   callback 回调函数
 
 *   vars:
-    *   ajaxData 记录对象
+    *   ajaxData 记录对象，用于请求服务器数据
     
 *   相关变量:
     *   init_dataSetting
@@ -61,7 +65,7 @@ insure.js分析
     *   [fetch fn] 服务器数据 url:/mall_products/fetchCheckProductData
         >   获取投保产品的信息内容，用来设置选项内容,存放于一个叫reset_data变量
 
-        *   vars: reset_data 存放信息
+        *   vars: reset_data 存放信息,应该是用来记录服务器数据，用于设置选项DOM的值
             *   包括:
                 1.   被保人与投保人关系：insured_relation
                 2.   投保日期？：policy_date
@@ -136,3 +140,6 @@ insure.js分析
 >   *   主要是根据不同的产品做一些投保信息选项规则不同的修改
 >    *   选择本人与非本人关系时候 投保年龄范围 变化 ，重复？
 >    *   如果支持银联操作添加银行
+
+
+[1]: #function-insuredatasetting     "[fetch fn]服务器数据"
