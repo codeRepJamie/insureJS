@@ -142,4 +142,4 @@ insure.js分析
 >    *   如果支持银联操作添加银行
 
 
-[fn2]: #function-insuredatasetting     "[fn] INSURE.dataSetting 初始化页面数"
+[fn2]: #function-insuredatasetting     "Function INSURE.dataSetting 初始化页面数"
