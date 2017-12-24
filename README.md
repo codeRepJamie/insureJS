@@ -1,5 +1,6 @@
 [功能地址](https://supertest.bxr.im/mall_products/filling/XH_XHRS_0002?saleChannel=xrk_drp_app&d_id=469857027848306688&c_id=469857027848306688&xrk_is_share=0&data=%7B%22birthday%22:%221999-12-22%22,%22age_desc%22:%2218-49%E5%91%A8%E5%B2%81%22,%22policy_period%22:%221%E5%B9%B4%22,%22sex%22:%22%E7%94%B7%22,%22policy_amount%22:%2210%E4%B8%87%22%7D&_hashTime=151382923314340)
 [js 地址](https://assets.xrkcdn.com/frontend-m/xrk-mall-frontend/xrk-mall-concat/static/cdn/js/insure_f5c1e32.js)
+[本文地址](https://github.com/codeRepJamie/insureJS)
 
 insure.js分析
 ===============================================================================================
@@ -11,6 +12,12 @@ insure.js分析
 > 页面主程序 （2-2419）
 > 19fn
 > 2 attr
+
+## Boolen INSURE.checkLogin_init ##
+>  是否登录状态 
+
+## Array INSURE.init_function_arr ##
+>  记录初始函数 
 
 ## Object INSURE.vars ##
 >  全局变量 （4-66）
@@ -348,5 +355,6 @@ end
 [BENIFIT.benifit_render]: #function-benifitbenifit_render "lot根据选择自动变化最大只能100%"
 [BENIFIT.benifit_backData]: #function-benifitbenifit_backdata "INSURE.dataSetting之前要做的事情"
 [BENIFIT.benifit_sort]: #function-benifitbenifit_sort "重新排序受益人的标题 obj_type 以及序号 benifits-key"
+[BENIFIT.benifit_verify]: ## ""
 
 [RENEWAL.renewal_relation_hover]: #function-renewalrenewal_relation_hover "续保订单时候 保证被保人证件类型与证件号不允许修改且与进来的时候 一致"
